@@ -112,6 +112,77 @@ main {
   font-weight: bold;
   transition: color 0.3s;
 }
+/* Responsivo para telas menores (celulares) */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  .catalogo h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .produtos {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .produto {
+    width: 90%;
+    height: auto;
+  }
+
+  .menu-lateral {
+    top: auto;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  .menu-lateral ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .menu-lateral li {
+    margin: 0;
+  }
+
+  .formulario-whats {
+    bottom: 130px;
+    right: 10px;
+    left: 10px;
+    text-align: center;
+  }
+
+  .formulario-whats input[type="file"] {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .whatsapp-button {
+    bottom: 20px;
+    right: 10px;
+    left: 10px;
+    width: auto;
+    max-width: 100%;
+  }
+}
+
 
 .menu-lateral a:hover {
   color: #25d366;
